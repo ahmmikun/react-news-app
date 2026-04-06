@@ -1,4 +1,22 @@
 body{
+    margin: 0;
+}
+header{
+    background-color: #B0E4CC;
+    text-align: center;
+
+}
+.logo{
+    color: #1A3263;
+    font-size: 40px;
+    font-family: Anton;
+}
+
+header input {
+    font-size: 20px;
+    margin: 20px 0px 0px;
+}
+body{
     margin:0;
  }
 
@@ -9,13 +27,13 @@ a {
 
 
 .logo {
-    color:#DD88CF;
+    color:#fff;
     font-size: 40px;
     font-family:Anton;   
  }
 
 header {
-    background: #F8E7F6;
+    background: #03a9f4;
     text-align: center;
     border-bottom: 5px solid #3e3e3e;
     padding-bottom: 10px;
@@ -54,7 +72,7 @@ nav {
   
   .navItem {
     display: inline-block;
-    color: #4B164C;
+    color: #fff;
     font-size: 24px;
     font-family: Anton;
     margin-right: 10px;

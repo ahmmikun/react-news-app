@@ -1,15 +1,22 @@
-import Header from "./components/Header";
+import { useState } from "react";
+import Header from "./components/header/Header";
+import NewsItem from "./components/NewsItem";
 import NewsList from "./components/NewsList";
-import NewsItems from "./components/NewsItems";
+import { newsData } from "./utils/data";
+export default function App(){
+  const[news,setNews]=useState(newsData)
+  const getKeywords=(event)=>{
+    let keywords= console.log(event.target.value);
+    let filtered=newsData.filter(item=>{
+      return item.title.indexOf(keywords)>-1;
+    })
+    setNews(filtered)
+  }
+   return(<>
+  <Header getKeywords={getKeywords}/>
+  <NewsList news={news}/>
 
-
-export default function App() {
-  return (
-    <>
-      <Header />
-      <NewsList />
-      <NewsItems />
-    </>
-  );
+  
+  
+  </>);
 }
-    
